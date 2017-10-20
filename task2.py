@@ -1,10 +1,17 @@
 from weather import Weather
 
 weather = Weather()
-location = weather.lookup_by_location(input("Enter the Location "))
+location = weather.lookup_by_location("Halifax" )
 condition = location.condition()
 print(condition['text'])
+t=[]
+l=[]
 for forecasts in location.forecast():
-    print(forecasts['date'])
+        t.append (int(forecasts['high']))
+        l.append(int(forecasts['low']))
 
-    print("The Highest temprature in 5 days is ", forecasts['high'])
+
+print(max(t))
+
+print(t)
+print(l)
