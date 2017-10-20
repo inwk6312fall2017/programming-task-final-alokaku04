@@ -2,8 +2,9 @@ book1=open("Book1.txt","r")
 y1=book1.read()
 x1=y1.split()
 max1=max(x1,key=len)
+
 book2=open("Book2.txt","r")
-y2=book1.read()
+y2=book2.read()
 x2=y2.split()
 max2=max(x2,key=len)
 
