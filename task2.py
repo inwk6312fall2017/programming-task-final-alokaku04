@@ -18,4 +18,4 @@ print("min_temp=" ,min(q))
 for forecasts in location.forecast():
 
     x.append(forecasts['date'])
-print("max temp day=",x[4] ,"             ","min temp day=", x[2])
+print("max temp day=",x[4] ,"             ","min temp day=", x[2],"            ", "its going to rain=",x[2])
