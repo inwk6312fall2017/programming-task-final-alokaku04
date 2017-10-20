@@ -10,11 +10,12 @@ for forecasts in location.forecast():
         t.append (int(forecasts['high']))
         l.append(int(forecasts['low']))
 
-
-print("max_temp=", max(t))
-print("min_temp=" ,min(l))
+p=t[:5]
+q=l[:5]
+x=[]
+print("max_temp=", max(p))
+print("min_temp=" ,min(q))
 for forecasts in location.forecast():
-    print (forecasts['text'])
-    print (forecasts['date'])
-    print (forecasts['high'])
-    print (forecasts['low'])
+
+    x.append(forecasts['date'])
+print("max temp day=",x[4] ,"             ","min temp day=", x[2])
